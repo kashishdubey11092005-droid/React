@@ -1,25 +1,20 @@
 import { useState } from 'react'
-// import reactLogo from './assets/react.svg'
-// import viteLogo from './assets/vite.svg'
-// import heroImg from './assets/hero.png'
-// import './App.css'
 
-function App() {
-  const [count, setCount] = useState(0)
+export default function App() {
+	const [count, setCount] = useState(0)
 
-  return (
-    <>
-      <h1>Hello, Vite + React! kashish</h1>
-      <section id="center">
-        <div>
-          <h1>Get started</h1>
-          <p>
-            Edit <code>src/App.tsx</code> and save to test <code>HMR</code>
-          </p>
-        </div>
-      </section>
-    </>
-  )
+	return (
+		<div style={{ padding: 24 }}>
+			<h1>Vite + React</h1>
+			<p>
+				This app was restored. Edit <code>src/App.tsx</code> and save to hot-reload.
+			</p>
+			<div style={{ marginTop: 16 }}>
+				<button className="counter" onClick={() => setCount((c) => c + 1)}>
+					count is {count}
+				</button>
+			</div>
+		</div>
+	)
 }
 
-export default App
