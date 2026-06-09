@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import User from './User'
+import Fruit from './Fruit'
 
 export default function App() {
   const [salary, setSalary] = useState('')
@@ -23,6 +24,7 @@ export default function App() {
       {advice && <p>{advice}</p>}
       {advice && <p>Use your money wisely.</p>}
       <User />
+      <Fruit />
     </div>
   )
 }
