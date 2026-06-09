@@ -1,6 +1,8 @@
 import { useState } from 'react'
 import User from './User'
 import Fruit from './Fruit'
+import Login, { Profile, Settings } from './UserComponent'
+import { Userkey } from './userKey'
 
 export default function App() {
   const [salary, setSalary] = useState('')
@@ -25,6 +27,10 @@ export default function App() {
       {advice && <p>Use your money wisely.</p>}
       <User />
       <Fruit />
+      <Login />
+      <Profile />
+      <Settings />
+      <p>User Key: {Userkey}</p>
     </div>
   )
 }
