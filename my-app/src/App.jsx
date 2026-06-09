@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import User from './User'
 
 export default function App() {
   const [salary, setSalary] = useState('')
@@ -21,6 +22,7 @@ export default function App() {
       <button onClick={showAdvice}>Get Advice</button>
       {advice && <p>{advice}</p>}
       {advice && <p>Use your money wisely.</p>}
+      <User />
     </div>
   )
 }
