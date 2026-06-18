@@ -29,6 +29,7 @@ const App = () => {
     <div>
       <Header />
       <Navbar />
+      <Navbar />
 
       <form onSubmit={submitHandler}>
         <input
