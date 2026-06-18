@@ -11,34 +11,37 @@
 // }
 
 // export default App;
-import React, { usestate } from "react";
-const useState = React.useState;
+import React, { useState } from "react";
+import Header from "./Header";
+
 const App = () => {
+  const [user, setUser] = useState("");
 
-const [user, setUser] = useState('')
-    const submitHandler = (e) => {
-      e.preventDefault();
-      console.log(user);
-      setUser('');
-    }
-     return ( 
-      <div>
-      <form onSubmit ={ (e)=> {submitHandler(e)}}>
-     <input
-       value={user}
-       onChange ={(e) => setUser(e.target.value)}
+  const submitHandler = (e) => {
+    e.preventDefault();
+    console.log(user);
+    setUser("");
+  };
 
-       className= 'px-3 rounded py-4 text-xl m-5'
-       type="text"
-       placeholder="enter your name"
-       />
-       <button className=' px-4 text-white py-3 m-5 text-xl font-semibold bg-emerald-600 rounded'>submit</button>
+  return (
+    <div>
+      <Header />
+
+      <form onSubmit={submitHandler}>
+        <input
+          value={user}
+          onChange={(e) => setUser(e.target.value)}
+          type="text"
+          placeholder="enter your name"
+        />
+
+        <button>submit</button>
       </form>
-      </div>
-     )
-    
-     }
-     export default App;
+    </div>
+  );
+};
+
+export default App;
 
 
 
