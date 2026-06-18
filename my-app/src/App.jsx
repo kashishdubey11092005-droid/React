@@ -13,6 +13,8 @@
 // export default App;
 import React, { useState } from "react";
 import Header from "./Header";
+import Navbar from "./Navbar";
+import Footer from "./Footer";
 
 const App = () => {
   const [user, setUser] = useState("");
@@ -26,6 +28,7 @@ const App = () => {
   return (
     <div>
       <Header />
+      <Navbar />
 
       <form onSubmit={submitHandler}>
         <input
@@ -37,6 +40,7 @@ const App = () => {
 
         <button>submit</button>
       </form>
+      <Footer />
     </div>
   );
 };
