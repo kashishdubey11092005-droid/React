@@ -11,43 +11,65 @@
 // }
 
 // export default App;
-import React, { useState } from "react";
-import Header from "./Header";
-import Navbar from "./Navbar";
-import Footer from "./Footer";
+// import React, { useState } from "react";
+// import Header from "./Header";
+// import Navbar from "./Navbar";
+// import Footer from "./Footer";
 
+// const App = () => {
+//   const [user, setUser] = useState("");
+
+//   const submitHandler = (e) => {
+//     e.preventDefault();
+//     console.log(user);
+//     setUser("");
+//   };
+
+//   return (
+//     <div>
+//       <Header />
+//       <Navbar />
+//       <Navbar />
+
+//       <form onSubmit={submitHandler}>
+//         <input
+//           value={user}
+//           onChange={(e) => setUser(e.target.value)}
+//           type="text"
+//           placeholder="enter your name"
+//         />
+
+//         <button>submit</button>
+//       </form>
+//       <Footer />
+//     </div>
+//   );
+// };
+
+// export default App;
+import React from 'react';
 const App = () => {
-  const [user, setUser] = useState("");
 
-  const submitHandler = (e) => {
-    e.preventDefault();
-    console.log(user);
-    setUser("");
-  };
+const name = "kashish";
+const num = 10;
+const person ={
+  name : 'narayan',
+  gmail :'laxmi@gmail.com'
+}
+return (
+  <div>
+    <h1> hello guys!</h1>
+    <h1> {11+10}</h1>
 
-  return (
-    <div>
-      <Header />
-      <Navbar />
-      <Navbar />
-
-      <form onSubmit={submitHandler}>
-        <input
-          value={user}
-          onChange={(e) => setUser(e.target.value)}
-          type="text"
-          placeholder="enter your name"
-        />
-
-        <button>submit</button>
-      </form>
-      <Footer />
-    </div>
-  );
-};
+    <p> {name}</p>
+    <p> {num}</p>
+    <p> {person.name}</p>
+    <p> {person.gmail}</p>
+ </div>
+)
+}
 
 export default App;
-
 
 
 
