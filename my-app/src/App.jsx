@@ -47,32 +47,48 @@
 // };
 
 // export default App;
-import React from 'react';
+// import React from 'react';
+// const App = () => {
+
+// const name = "kashish";
+// const num = 10;
+// const person ={
+//   name : 'narayan',
+//   gmail :'laxmi@gmail.com'
+// }
+// return (
+//   <div>
+//     <h1> hello guys!</h1>
+//     <h1> {11+10}</h1>
+
+//     <p> {name}</p>
+//     <p> {num}</p>
+//     <p> {person.name}</p>
+//     <p> {person.gmail}</p>
+//  </div>
+// )
+// }
+
+// export default App
+
+import React from "react";
+import Product from "./component/Product";
 const App = () => {
-
-const name = "kashish";
-const num = 10;
-const person ={
-  name : 'narayan',
-  gmail :'laxmi@gmail.com'
-}
-return (
-  <div>
-    <h1> hello guys!</h1>
-    <h1> {11+10}</h1>
-
-    <p> {name}</p>
-    <p> {num}</p>
-    <p> {person.name}</p>
-    <p> {person.gmail}</p>
- </div>
-)
-}
+   const obj = {
+    ram : '4gb',
+    rom :'128gb',
+    chip : 'intel i -9 '
+   }
+   return(
+    <div>
+    <Product name = "iphone 16" price = {70000} color = "blue" data = {obj} />
+    <Product name = "iphone 17" price ={80000} color  ="Green" />  
+       </div>
+   )
+  }
+   
 
 export default App;
-
-
-
 
 
 
