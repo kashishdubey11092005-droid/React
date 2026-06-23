@@ -72,7 +72,7 @@
 // export default App
 
 import React from "react";
-//import Product from "./component/Product";
+import Product from "./component/Product";
 import Items from "./component/Items";
 const App = () => {
    const obj = {
@@ -82,8 +82,8 @@ const App = () => {
    }
    return(
     <div>
-    {/* <Product name = "iphone 17" price ={80000} color  ="Green" />  
-    <product name = "iphone 16" price ={70000} color = " blue" data = {obj} />     */}
+    <Product name = "iphone 17" price ={80000} color  ="Green" data = {obj} />  
+    <product name = "iphone 16" price ={70000} color = " blue"  />
     <Items/>
        </div>
    )
