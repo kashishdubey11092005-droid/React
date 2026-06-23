@@ -72,7 +72,8 @@
 // export default App
 
 import React from "react";
-import Product from "./component/Product";
+//import Product from "./component/Product";
+import Items from "./component/Items";
 const App = () => {
    const obj = {
     ram : '4gb',
@@ -81,8 +82,9 @@ const App = () => {
    }
    return(
     <div>
-    <Product name = "iphone 16" price = {70000} color = "blue" data = {obj} />
-    <Product name = "iphone 17" price ={80000} color  ="Green" />  
+    {/* <Product name = "iphone 17" price ={80000} color  ="Green" />  
+    <product name = "iphone 16" price ={70000} color = " blue" data = {obj} />     */}
+    <Items/>
        </div>
    )
   }
