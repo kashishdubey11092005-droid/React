@@ -72,19 +72,21 @@
 // export default App
 
 import React from "react";
-import Product from "./component/Product";
-import Items from "./component/Items";
+
+   import Product from "./component/Product";
+   import Items from "./component/Items";
+    import Event from "./component/Event"; 
+    import UseState from "./component/UseState";
 const App = () => {
    const obj = {
     ram : '4gb',
     rom :'128gb',
     chip : 'intel i -9 '
    }
-   return(
-    <div>
-    <Product name = "iphone 17" price ={80000} color  ="Green" data = {obj} />  
-    <product name = "iphone 16" price ={70000} color = " blue"  />
-    <Items/>
+   
+    return (
+      <div>
+      <UseState/>
        </div>
    )
   }
