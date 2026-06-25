@@ -79,6 +79,7 @@ import React from "react";
     import UseState from "./component/UseState";
     import Map from "./Map";
     import Filter from "./component/Filter";
+    import UseEffect from "./component/UseEffect";
 const App = () => {
    const obj = {
     ram : '4gb',
@@ -88,7 +89,7 @@ const App = () => {
    
     return (
       <div>
-       <Filter/>
+       <UseEffect/>
        </div>
    )
   }
