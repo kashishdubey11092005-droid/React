@@ -77,6 +77,7 @@ import React from "react";
    import Items from "./component/Items";
     import Event from "./component/Event"; 
     import UseState from "./component/UseState";
+    import Map from "./Map";
 const App = () => {
    const obj = {
     ram : '4gb',
@@ -86,7 +87,7 @@ const App = () => {
    
     return (
       <div>
-      <UseState/>
+      <Map/>
        </div>
    )
   }
